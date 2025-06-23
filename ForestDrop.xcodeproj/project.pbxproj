@@ -6,13 +6,22 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0CEDD8124687AC2AE304E396 /* Pods_ForestDrop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C1AE87D5BB3E1026B1069E /* Pods_ForestDrop.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		09C1AE87D5BB3E1026B1069E /* Pods_ForestDrop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForestDrop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50BDF793D01B8701D7F2342A /* Pods-ForestDrop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForestDrop.debug.xcconfig"; path = "Target Support Files/Pods-ForestDrop/Pods-ForestDrop.debug.xcconfig"; sourceTree = "<group>"; };
+		5C5321B0C4C375ACDEF2C4C6 /* Pods-ForestDrop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForestDrop.release.xcconfig"; path = "Target Support Files/Pods-ForestDrop/Pods-ForestDrop.release.xcconfig"; sourceTree = "<group>"; };
 		E198889D2E01F3F70094471B /* ForestDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForestDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E198889F2E01F3F70094471B /* ForestDrop */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = ForestDrop;
 			sourceTree = "<group>";
 		};
@@ -23,17 +32,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CEDD8124687AC2AE304E396 /* Pods_ForestDrop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22F21A0872232BC9D6B124F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09C1AE87D5BB3E1026B1069E /* Pods_ForestDrop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE84350406B3CE0FF2F12AF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50BDF793D01B8701D7F2342A /* Pods-ForestDrop.debug.xcconfig */,
+				5C5321B0C4C375ACDEF2C4C6 /* Pods-ForestDrop.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E19888942E01F3F70094471B = {
 			isa = PBXGroup;
 			children = (
 				E198889F2E01F3F70094471B /* ForestDrop */,
 				E198889E2E01F3F70094471B /* Products */,
+				AE84350406B3CE0FF2F12AF1 /* Pods */,
+				22F21A0872232BC9D6B124F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +82,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E19888A82E01F3F90094471B /* Build configuration list for PBXNativeTarget "ForestDrop" */;
 			buildPhases = (
+				C81FD0FE7DE5D0965843CBB0 /* [CP] Check Pods Manifest.lock */,
 				E19888992E01F3F70094471B /* Sources */,
 				E198889A2E01F3F70094471B /* Frameworks */,
 				E198889B2E01F3F70094471B /* Resources */,
@@ -64,8 +95,6 @@
 				E198889F2E01F3F70094471B /* ForestDrop */,
 			);
 			name = ForestDrop;
-			packageProductDependencies = (
-			);
 			productName = ForestDrop;
 			productReference = E198889D2E01F3F70094471B /* ForestDrop.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +142,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C81FD0FE7DE5D0965843CBB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForestDrop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E19888992E01F3F70094471B /* Sources */ = {
@@ -246,6 +300,7 @@
 		};
 		E19888A92E01F3F90094471B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50BDF793D01B8701D7F2342A /* Pods-ForestDrop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -279,6 +334,7 @@
 		};
 		E19888AA2E01F3F90094471B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C5321B0C4C375ACDEF2C4C6 /* Pods-ForestDrop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
