@@ -43,6 +43,12 @@ struct SettingsView: View {
                     }
                 }
             }
+            
+            Section(header: Text("Disclaimer")) {
+                Text("The information in this app is for general wellness and entertainment purposes only and is not intended as medical advice. Always consult a qualified healthcare professional before making any health-related decisions.")
+                    .font(.footnote)
+                    .foregroundColor(.gray)
+            }
         }
     }
 }

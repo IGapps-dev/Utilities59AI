@@ -40,10 +40,18 @@ struct OnboardingView: View {
                     } else {
                         Text("Swipe to continue...->")
                     }
+                    Section(header: Text("Disclaimer")) {
+                        Text("The information in this app is for general wellness and entertainment purposes only and is not intended as medical advice. Always consult a qualified healthcare professional before making any health-related decisions.")
+                            .multilineTextAlignment(.center)
+                            .font(.footnote)
+                            .foregroundColor(.gray)
+                    }
                 }
                 .tag(idx)
                 .padding()
             }
+            
+
         }
         .tabViewStyle(PageTabViewStyle())
     }
