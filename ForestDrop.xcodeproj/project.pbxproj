@@ -8,28 +8,97 @@
 
 /* Begin PBXBuildFile section */
 		0CEDD8124687AC2AE304E396 /* Pods_ForestDrop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C1AE87D5BB3E1026B1069E /* Pods_ForestDrop.framework */; };
+		82F7C5962E1FB50500E6A550 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 82F7C58F2E1FB50500E6A550 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		82F7C59E2E1FB52C00E6A550 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 82F7C59D2E1FB52C00E6A550 /* OneSignalExtension */; };
+		82F7C5A02E1FB52C00E6A550 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 82F7C59F2E1FB52C00E6A550 /* OneSignalFramework */; };
+		82F7C5A22E1FB52C00E6A550 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 82F7C5A12E1FB52C00E6A550 /* OneSignalInAppMessages */; };
+		82F7C5A72E1FB9A800E6A550 /* AppMetricaCore in Frameworks */ = {isa = PBXBuildFile; productRef = 82F7C5A62E1FB9A800E6A550 /* AppMetricaCore */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82F7C5942E1FB50500E6A550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E19888952E01F3F70094471B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82F7C58E2E1FB50500E6A550;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		82F7C59B2E1FB50500E6A550 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				82F7C5962E1FB50500E6A550 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		09C1AE87D5BB3E1026B1069E /* Pods_ForestDrop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForestDrop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BDF793D01B8701D7F2342A /* Pods-ForestDrop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForestDrop.debug.xcconfig"; path = "Target Support Files/Pods-ForestDrop/Pods-ForestDrop.debug.xcconfig"; sourceTree = "<group>"; };
 		5C5321B0C4C375ACDEF2C4C6 /* Pods-ForestDrop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForestDrop.release.xcconfig"; path = "Target Support Files/Pods-ForestDrop/Pods-ForestDrop.release.xcconfig"; sourceTree = "<group>"; };
+		82F7C58F2E1FB50500E6A550 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E198889D2E01F3F70094471B /* ForestDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForestDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		82F7C58A2E1FB4DC00E6A550 /* Exceptions for "ForestDrop" folder in "ForestDrop" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E198889C2E01F3F70094471B /* ForestDrop */;
+		};
+		82F7C59A2E1FB50500E6A550 /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 82F7C58E2E1FB50500E6A550 /* OneSignalNotificationServiceExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		82F7C5902E1FB50500E6A550 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				82F7C59A2E1FB50500E6A550 /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 		E198889F2E01F3F70094471B /* ForestDrop */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				82F7C58A2E1FB4DC00E6A550 /* Exceptions for "ForestDrop" folder in "ForestDrop" target */,
+			);
 			path = ForestDrop;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		82F7C58C2E1FB50500E6A550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F7C59E2E1FB52C00E6A550 /* OneSignalExtension in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E198889A2E01F3F70094471B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F7C5A22E1FB52C00E6A550 /* OneSignalInAppMessages in Frameworks */,
+				82F7C5A72E1FB9A800E6A550 /* AppMetricaCore in Frameworks */,
+				82F7C5A02E1FB52C00E6A550 /* OneSignalFramework in Frameworks */,
 				0CEDD8124687AC2AE304E396 /* Pods_ForestDrop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				E198889F2E01F3F70094471B /* ForestDrop */,
+				82F7C5902E1FB50500E6A550 /* OneSignalNotificationServiceExtension */,
 				E198889E2E01F3F70094471B /* Products */,
 				AE84350406B3CE0FF2F12AF1 /* Pods */,
 				22F21A0872232BC9D6B124F5 /* Frameworks */,
@@ -68,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				E198889D2E01F3F70094471B /* ForestDrop.app */,
+				82F7C58F2E1FB50500E6A550 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +146,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		82F7C58E2E1FB50500E6A550 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82F7C5972E1FB50500E6A550 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				82F7C58B2E1FB50500E6A550 /* Sources */,
+				82F7C58C2E1FB50500E6A550 /* Frameworks */,
+				82F7C58D2E1FB50500E6A550 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				82F7C5902E1FB50500E6A550 /* OneSignalNotificationServiceExtension */,
+			);
+			name = OneSignalNotificationServiceExtension;
+			packageProductDependencies = (
+				82F7C59D2E1FB52C00E6A550 /* OneSignalExtension */,
+			);
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 82F7C58F2E1FB50500E6A550 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		E198889C2E01F3F70094471B /* ForestDrop */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E19888A82E01F3F90094471B /* Build configuration list for PBXNativeTarget "ForestDrop" */;
@@ -83,10 +177,12 @@
 				E19888992E01F3F70094471B /* Sources */,
 				E198889A2E01F3F70094471B /* Frameworks */,
 				E198889B2E01F3F70094471B /* Resources */,
+				82F7C59B2E1FB50500E6A550 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				82F7C5952E1FB50500E6A550 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				E198889F2E01F3F70094471B /* ForestDrop */,
@@ -103,9 +199,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1640;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
+					82F7C58E2E1FB50500E6A550 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					E198889C2E01F3F70094471B = {
 						CreatedOnToolsVersion = 16.4;
 					};
@@ -120,17 +219,29 @@
 			);
 			mainGroup = E19888942E01F3F70094471B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				82F7C59C2E1FB52C00E6A550 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+				82F7C5A52E1FB9A800E6A550 /* XCRemoteSwiftPackageReference "appmetrica-sdk-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E198889E2E01F3F70094471B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E198889C2E01F3F70094471B /* ForestDrop */,
+				82F7C58E2E1FB50500E6A550 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		82F7C58D2E1FB50500E6A550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E198889B2E01F3F70094471B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,6 +277,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		82F7C58B2E1FB50500E6A550 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E19888992E01F3F70094471B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,7 +293,65 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		82F7C5952E1FB50500E6A550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82F7C58E2E1FB50500E6A550 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 82F7C5942E1FB50500E6A550 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		82F7C5982E1FB50500E6A550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karqartrewpouil.kjn.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82F7C5992E1FB50500E6A550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karqartrewpouil.kjn.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E19888A62E01F3F90094471B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -301,12 +477,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ForestDrop/ForestDrop.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ForestDrop/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Dewroot Dropper";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -316,7 +493,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.karqartrewpouil.kjn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -335,12 +512,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ForestDrop/ForestDrop.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ForestDrop/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Dewroot Dropper";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -350,7 +528,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.karqartrewpouil.kjn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -366,6 +544,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		82F7C5972E1FB50500E6A550 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82F7C5982E1FB50500E6A550 /* Debug */,
+				82F7C5992E1FB50500E6A550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E19888982E01F3F70094471B /* Build configuration list for PBXProject "ForestDrop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -385,6 +572,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		82F7C59C2E1FB52C00E6A550 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.14;
+			};
+		};
+		82F7C5A52E1FB9A800E6A550 /* XCRemoteSwiftPackageReference "appmetrica-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/appmetrica/appmetrica-sdk-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		82F7C59D2E1FB52C00E6A550 /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F7C59C2E1FB52C00E6A550 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalExtension;
+		};
+		82F7C59F2E1FB52C00E6A550 /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F7C59C2E1FB52C00E6A550 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalFramework;
+		};
+		82F7C5A12E1FB52C00E6A550 /* OneSignalInAppMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F7C59C2E1FB52C00E6A550 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalInAppMessages;
+		};
+		82F7C5A62E1FB9A800E6A550 /* AppMetricaCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F7C5A52E1FB9A800E6A550 /* XCRemoteSwiftPackageReference "appmetrica-sdk-ios" */;
+			productName = AppMetricaCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E19888952E01F3F70094471B /* Project object */;
 }
